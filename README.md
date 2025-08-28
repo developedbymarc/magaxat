@@ -1,11 +1,12 @@
 
-**This project is currently not actively maintained/managed. If you're interested in taking it over,
-please tell me at info@bitfire.at.**
+> [!IMPORTANT]
+> **This project is not maintained. There are notable forks with various improvements. If you're interested in GfxTablet, please have a look at the forks and start from there.**
 
-To be informed about updates:
+For instance:
 
-* [follow GfxTablet on Twitter](https://twitter.com/GfxTablet)
+* https://gitlab.com/adam_b3n3s/my_fork_of_gfxtablet
 
+---
 
 What is GfxTablet?
 ==================
