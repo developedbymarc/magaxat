@@ -2,12 +2,6 @@
 > [!IMPORTANT]
 > **This project is not maintained. There are notable forks with various improvements. If you're interested in GfxTablet, please have a look at the forks and start from there.**
 
-For instance:
-
-* https://gitlab.com/adam_b3n3s/my_fork_of_gfxtablet
-
----
-
 What is GfxTablet?
 ==================
 
@@ -102,10 +96,10 @@ Part 2: App
 You can either
 
 1. compile the app from the source code in the Github repository, or
-2. [download it from the open-source market F-Droid](https://f-droid.org/repository/browse/?fdcategory=Multimedia&fdid=at.bitfire.gfxtablet), or
+2. ~~[download it from the open-source market F-Droid](https://f-droid.org/repository/browse/?fdcategory=Multimedia&fdid=at.bitfire.gfxtablet)~~ **Removed**, or
 3. download it from Samsung Galaxy Apps (if you have a Samsung device), or
 4. [download it directly from Github](https://github.com/rfc2822/GfxTablet/releases), or
-5. ~~[download it from Google Play](https://play.google.com/store/apps/details?id=at.bitfire.gfxtablet)~~ [removed by Google](https://forums.bitfire.at/topic/1071/google-has-removed-gfxtablet-from-google-play)
+5. ~~[download it from Google Play](https://play.google.com/store/apps/details?id=at.bitfire.gfxtablet)~~ [removed by Google](https://web.archive.org/web/20211023103116/https://forums.bitfire.at/topic/1071/google-has-removed-gfxtablet-from-google-play)
 
 After installing, enter your host IP in the Settings / Host name and it should be ready.
 
