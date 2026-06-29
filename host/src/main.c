@@ -11,7 +11,7 @@
 #include <linux/input.h>
 #include <linux/uinput.h>
 #include <stdint.h>
-#include "protocol.h"
+#include <protocol.h>
 
 #define die(str, args...) { \
 	perror(str); \
