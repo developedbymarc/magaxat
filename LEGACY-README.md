@@ -1,7 +1,3 @@
-
-> [!IMPORTANT]
-> **This project is not maintained. There are notable forks with various improvements. If you're interested in GfxTablet, please have a look at the forks and start from there.**
-
 What is GfxTablet?
 ==================
 
