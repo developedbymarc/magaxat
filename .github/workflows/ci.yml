@@ -21,8 +21,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: Run cpplint
         run: |
-          find host/src -type f \( -name '*.h' -o -name '*.hpp' -o -name '*.cpp' \) -print0 \
-            | xargs -0 --no-run-if-empty pipx run cpplint --filter=-legal/copyright
+          pipx run cpplint --recursive --extensions=cpp,hpp,h host/lib host/src
 
   # android-lint:
   #   runs-on: ubuntu-latest
@@ -35,13 +34,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Configure
-        run: cmake -S host -B build -DCMAKE_BUILD_TYPE=Release
+        run: cmake -S host/ -B host/build -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release
       - name: Build
-        run: cmake --build build --parallel
+        run: cmake --build host/build --parallel
       - name: Stage binary
         run: |
           mkdir -p dist
-          cp build/magaxat dist/magaxat-linux-x86_64
+          cp host/build/src/magaxat-host dist/magaxat-linux-x86_64
       - uses: actions/upload-artifact@v4
         with:
           name: host-linux

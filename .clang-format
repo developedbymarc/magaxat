@@ -8,6 +8,7 @@ BreakBeforeBraces: Attach
 IndentWidth: 4
 TabWidth: 4
 UseTab: Never
+SpacesBeforeTrailingComments: 2
 
 # Always indent the contents of a namespace
 NamespaceIndentation: All
@@ -23,3 +24,19 @@ IndentCaseLabels: true
 # IndentCaseBlocks: true
 
 ColumnLimit: 100
+
+# Group includes by category
+IncludeBlocks: Regroup
+IncludeCategories:
+  # C system headers, e.g. <stdio.h>
+  - Regex:           '^<.*\.h>'
+    Priority:        1
+  # Project headers, e.g. <magaxat/foo.h>
+  - Regex:           '^<magaxat/.*>'
+    Priority:        4
+  # C++ system headers, e.g. <vector>
+  - Regex:           '^<.*>'
+    Priority:        2
+  # Everything else (project/local headers, "quoted" includes)
+  - Regex:           '.*'
+    Priority:        3
