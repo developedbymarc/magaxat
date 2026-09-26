@@ -1,0 +1,25 @@
+# .clang-format
+BasedOnStyle: LLVM
+
+# Opening bracket on the same line as the statement
+BreakBeforeBraces: Attach
+
+# 4-space indentation, spaces not tabs
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+
+# Always indent the contents of a namespace
+NamespaceIndentation: All
+
+# Indent public/private/protected labels inside a class one level in
+# from the class brace, and indent members another level past that
+AccessModifierOffset: -4
+IndentAccessModifiers: false
+
+# Indent "case" labels under "switch", and indent the code inside
+# each case block one further level
+IndentCaseLabels: true
+# IndentCaseBlocks: true
+
+ColumnLimit: 100

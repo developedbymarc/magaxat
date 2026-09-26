@@ -1,0 +1,16 @@
+#pragma once
+
+namespace magaxat {
+    namespace metadata {
+        inline constexpr char name[] = "@APP_NAME@";
+
+        inline constexpr int version_major = @APP_VERSION_MAJOR@;
+        inline constexpr int version_minor = @APP_VERSION_MINOR@;
+        inline constexpr int version_patch = @APP_VERSION_PATCH@;
+
+        inline constexpr int protocol_version = @APP_PROTOCOL_VERSION@;
+
+        inline constexpr char git_commit[] = "@GIT_SHA@";
+        inline constexpr char git_branch[] = "@GIT_BRANCH@";
+    }; // namespace metadata
+}; // namespace magaxat
